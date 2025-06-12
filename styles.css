@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --fonte-principal: "Ancizar Serif", serif;
+  --azul: #201E43;
+  --cor-de-fundo: #fce0d8;
+  --branco: #ffffff;
+}
+
+/* Reset CSS */ 
+* { 
+  margin: 0; 
+  padding: 0; 
+}
+
+
+body {
+    /*height: 100vh*/
+    box-sizing: border-box;
+    font-size: 17px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--cor-de-fundo);
+}
+
+.cabecalho {
+  background-image: url('img/9.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 490px;
+  border-bottom: 2px solid var(--azul);
+  background-color: var(--cor-de-fundo);
+}
+
+.cabecalho__titulo {
+  font-family: var(--fonte-principal);
+  font-weight: 300;
+  font-size: 30px;
+  color: var(--azul);
+  background-color: var(--cor-de-fundo);
+  display: inline;
+}
+
+.historia {
+  border-bottom: 1.5px solid var(--azul);
+}
+
+.divisao__p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 30px 0;
+  color: var(--azul);
+}
+
+.historia__imagem {
+  width: 43%;
+  height: 20%;
+}
+
+.historia__texto__p {
+  font-size: 14px;
+}
+
+.divisao__s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  color: var(--azul);
+}
+
+.historia__texto__s {
+  font-size: 14px;
+}
+
+.divisao__t {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.historia__imagem__t {
+  width: 60%;
+}
+
+.historia__texto__t {
+  margin: 5px 0;
+  color: var(--azul);
+}
+
+.cinema {
+  margin: 30px 0 20px 0;
+}
+
+.divisao__cinema {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.divisao__imagem {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cinema__imagem {
+  width: 40%;
+}
+
+.cinema__titulo {
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--azul);
+}
+
+.cinema__texto {
+  font-size: 15px;
+  margin: 8px 15px;
+  color: var(--azul);
+}
+
+.carrossel {
+  background-color: var(--azul);
+  margin: 30px 0 50px 0;
+}
+
+.carrossel__titulo {
+  color: var(--branco);
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 0.8em;
+  padding-left: 0.8em;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 5px 0 10px 0;
+}
+
+.anime {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.anime__texto {
+  display: flex;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--azul);
+}
+
+
+.anime__imagem {
+  width: 20%;
+  border-radius: 0.3em;
+}
+
+.anime__coracao {
+  width: 5%;
+}
+
+.divisao__anime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.declaracao {
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.declaracao__imagem {
+  width: 30%;
+  margin: 20px 0;
+  border-radius: 0.3em;
+}
+
+.declaracao__texto {
+  margin: 0 15px;
+  color: var(--branco);
+  font-size: 15px;
+}
+
+.rodape {
+    border-top:  1px solid var(--azul);
+    margin: 50px 0 12px 0;
+    display: flex;
+}
+
+.rodape__texto {
+  font-size: 13.5px;
+  font-weight: 100;
+  margin: 0 0 0 5px;
+  color: var(--azul);
+}
+
+.coracao__rodape {
+  width: 4%;
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 690px) {
+  .cabecalho {
+    height: 650px;
+  }
+
+  .cabecalho__titulo {
+    font-size: 60px;
+  }
+
+  .historia {
+    margin-top: 100px;
+  }
+
+  .historia__imagem {
+    width: 40%;
+  }
+
+  .divisao__p {
+    font-size: 40px;
+    gap: 80px;
+  }
+
+  .divisao__s {
+    font-size: 40px;
+    gap: 80px;
+  }
+
+  .historia__imagem__t {
+    width: 45%;
+  }
+
+  .historia__texto__t {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .divisao__t {
+    margin-top: 40px;
+    margin-bottom: 90px;
+  }
+
+  .cinema {
+    margin-bottom: 80px;
+  }
+
+  .cinema__titulo {
+    font-size: 60px;
+    margin: 40px 0 30px 0;
+  }
+
+  .cinema__texto {
+    font-size: 40px;
+    margin: 30px 30px 30px 30px;
+  }
+
+  .cinema__imagem {
+    width: 25%;
+  }
+
+  .divisao__imagem {
+    gap: 80px;
+  }
+
+  .carrossel__titulo {
+    font-size: 40px;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  .carrossel {
+    margin: 100px 0 100px 0;
+  }
+
+  .anime__texto {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .anime {
+    margin: 120px 0 160px 0;
+  }
+
+  .declaracao__imagem {
+    width: 25%;
+    padding: 30px 0 30px 0;
+  }
+
+  .declaracao__texto {
+    font-size: 30px;
+    margin: 0 70px;
+  }
+
+  .rodape__texto {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+  }
+
+  .coracao__rodape {
+    width: 2.5%;
+  }
+
+  .rodape {
+    margin: 150px 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cabecalho {
+    height: 450px;
+  }
+
+  .cabecalho__titulo {
+    font-size: 30px;
+  }
+
+  .historia {
+    margin-top: 40px;
+  }
+
+  .historia__imagem {
+    width: 45%;
+  }
+
+  .divisao__p {
+    font-size: 15px;
+    gap: 5px;
+  }
+
+  .divisao__s {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .historia__imagem__t {
+    width: 55%;
+  }
+
+  .historia__texto__t {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .divisao__t {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  .cinema {
+    margin-bottom: 10px;
+  }
+
+  .cinema__titulo {
+    font-size: 25px;
+    margin: 5px 0 8px 0;
+  }
+
+  .cinema__texto {
+    font-size: 15px;
+    margin: 12px 10px 12px 10px;
+  }
+
+  .cinema__imagem {
+    width: 35%;
+  }
+}
